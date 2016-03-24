@@ -1,0 +1,30 @@
+body {
+	font-family: "Roboto","segoe ui",Helvetica,Arial,sans-serif;
+	font-size: 13px;
+}
+
+form {
+	margin-bottom: 0px !important;
+}
+
+h3 {
+	font-size: 22px;
+	font-weight: 400;
+	font-family: Arial, sans-serif;
+}
+
+h4 {
+	font-family: Arial, sans-serif;
+}
+
+.btn-group>button {
+	margin-left: 5px !important;
+}
+
+table {
+	font-size: 13px
+}
+.paging-customer{
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}

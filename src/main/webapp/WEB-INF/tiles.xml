@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="backendLayout" template="/WEB-INF/template/backend/layout.jsp">
+		<put-attribute name="navbar"
+			value="/WEB-INF/template/backend/navbar.jsp" />
+		<put-attribute name="sidebar"
+			value="/WEB-INF/template/backend/sidebar.jsp" />	
+	</definition>
+
+	<definition name="bac_login" template="/WEB-INF/views/backend/bac_login.jsp" />
+
+	<definition name="bac_403" template="/WEB-INF/views/backend/bac_403.jsp" />
+
+	<definition name="error" template="/WEB-INF/views/backend/bac_403.jsp" />
+
+	<definition name="bac_company" extends="backendLayout">
+	    <put-attribute name="title" value="Công Ty" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/bac_company.jsp" />
+	</definition>
+	
+	<definition name="bac_page" extends="backendLayout">
+		<put-attribute name="title" value="Trang" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/bac_page.jsp" />
+	</definition>
+
+	<definition name="bac_catalog" extends="backendLayout">
+		<put-attribute name="title" value="Danh mục" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/bac_catalog.jsp" />
+	</definition>
+
+	<definition name="bac_customer" extends="backendLayout">
+		<put-attribute name="title" value="Khách hàng" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/bac_customer.jsp" />
+	</definition>
+	
+	<definition name="bac_product" extends="backendLayout">
+	    <put-attribute name="title" value="Sản phẩm" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/bac_product.jsp" />
+	</definition>
+	
+	<definition name="bac_blog" extends="backendLayout">
+	    <put-attribute name="title" value="Blogs" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/bac_blog.jsp" />
+	</definition>
+	
+	<definition name="bac_image" extends="backendLayout">
+	    <put-attribute name="title" value="Hình ảnh" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/fileupload/bac_fileupload.jsp" />
+	</definition>
+	
+	<definition name="bac_user" extends="backendLayout">
+	    <put-attribute name="title" value="Nhân viên" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/bac_user.jsp" />
+	</definition>
+	
+	<definition name="bac_transaction" extends="backendLayout">
+	    <put-attribute name="title" value="Hóa đơn" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/bac_transaction.jsp" />
+	</definition>
+	
+	<definition name="bac_slideimage" extends="backendLayout">
+	    <put-attribute name="title" value="Slide Image" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/bac_slideimage.jsp" />
+	</definition>
+	
+	<definition name="bac_general" extends="backendLayout">
+	    <put-attribute name="title" value="Thông số chung" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/bac_general.jsp" />
+	</definition>
+	
+	<definition name="bac_partner" extends="backendLayout">
+	    <put-attribute name="title" value="Đối tác" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/bac_partner.jsp" />
+	</definition>
+	
+	<definition name="bac_menu_footer_one" extends="backendLayout">
+	    <put-attribute name="title" value="Menu Footer One" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/bac_menu_footer_one.jsp" />
+	</definition>
+	
+	<definition name="bac_menu_footer_two" extends="backendLayout">
+	    <put-attribute name="title" value="Menu Footer Two" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/bac_menu_footer_two.jsp" />
+	</definition>
+	
+	<definition name="bac_best_catalog" extends="backendLayout">
+	    <put-attribute name="title" value="Danh mục nổi bật" />
+		<put-attribute name="content"
+			value="/WEB-INF/views/backend/bac_best_catalog.jsp" />
+	</definition>
+
+	<definition name="frontendLayout" template="/WEB-INF/template/frontend/layout.jsp">
+		<put-attribute name="logo"
+			value="/WEB-INF/template/frontend/logo.jsp" />
+		<put-attribute name="menu"
+			value="/WEB-INF/template/frontend/menu.jsp" />
+		<put-attribute name="footer"
+			value="/WEB-INF/template/frontend/footer.jsp" />
+	</definition>
+
+	<definition name="fro_index" extends="frontendLayout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/fro_index.jsp" />
+	</definition>
+	
+	<definition name="fro_page" extends="frontendLayout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/fro_page.jsp" />
+	</definition>
+	
+	<definition name="fro_introduce" extends="frontendLayout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/fro_introduce.jsp" />
+	</definition>
+	
+	<definition name="fro_branches" extends="frontendLayout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/fro_branches.jsp" />
+	</definition>
+	
+	<definition name="fro_products" extends="frontendLayout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/fro_products.jsp" />
+	</definition>
+	
+	<definition name="fro_product_detail" extends="frontendLayout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/fro_product_detail.jsp" />
+	</definition>
+	
+	<definition name="fro_blogs" extends="frontendLayout">
+		<put-attribute name="content"
+	value="/WEB-INF/views/frontend/fro_blogs.jsp" />
+	</definition>
+	
+	<definition name="fro_blog_detail" extends="frontendLayout">
+		<put-attribute name="content"
+			value="/WEB-INF/views/frontend/fro_blog_detail.jsp" />
+	</definition>
+	
+	<definition name="fro_cart" extends="frontendLayout">
+		<put-attribute name="content"
+	value="/WEB-INF/views/frontend/fro_cart.jsp" />
+	</definition>
+	
+	<definition name="fro_login" extends="frontendLayout">
+		<put-attribute name="content"
+	value="/WEB-INF/views/frontend/fro_login.jsp" />
+	</definition>
+	
+	<definition name="fro_login1" extends="frontendLayout">
+		<put-attribute name="header" value="" />
+		<put-attribute name="menu" value="" />
+		<put-attribute name="footer" value="" />
+		<put-attribute name="content" value="/WEB-INF/views/frontend/fro_login1.jsp" />
+	</definition>
+	
+	<definition name="fro_change_password" extends="frontendLayout">
+		<put-attribute name="content"
+	value="/WEB-INF/views/frontend/fro_change_password.jsp" />
+	</definition>
+	
+	<definition name="fro_account_info" extends="frontendLayout">
+		<put-attribute name="content"
+	value="/WEB-INF/views/frontend/fro_account_info.jsp" />
+	</definition>
+	
+	<definition name="fro_sign_up" extends="frontendLayout">
+		<put-attribute name="content"
+	value="/WEB-INF/views/frontend/fro_sign_up.jsp" />
+	</definition>
+
+</tiles-definitions>
